@@ -1,0 +1,19 @@
+Test Vector Summary
+============================================================
+Generated: 2026-04-01T13:01:32
+Seed: 42
+L: 8, D: 64
+Quantization scale: 0.01
+
+Input ranges (INT8):
+  Q: [-99, 99]
+  K: [-99, 100]
+  V: [-99, 100]
+
+Output range (INT8):
+  Output: [-88, 96]
+
+Attention weights (first row):
+  [0.0000000e+00 1.8954468e-01 9.8602295e-02 5.8749390e-01 1.0986328e-03
+ 3.9672852e-04 6.4056396e-02 5.8776855e-02]
+  Sum: 0.999969

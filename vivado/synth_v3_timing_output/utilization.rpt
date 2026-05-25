@@ -1,0 +1,30 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2024.2 (lin64) Build 5239630 Fri Nov 08 22:34:34 MST 2024
+| Date         : Mon Apr 13 20:28:13 2026
+| Host         : aleem-Latitude-5480 running 64-bit Ubuntu 24.04.4 LTS
+| Command      : report_utilization -hierarchical -file ./synth_v3_timing_output/utilization.rpt
+| Design       : streaming_attention_v3
+| Device       : xc7z020clg400-1
+| Speed File   : -1
+| Design State : Synthesized
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Utilization Design Information
+
+Table of Contents
+-----------------
+1. Utilization by Hierarchy
+
+1. Utilization by Hierarchy
+---------------------------
+
++----------------------------+-----------------+------------+------------+---------+------+------+--------+--------+------------+
+|          Instance          |      Module     | Total LUTs | Logic LUTs | LUTRAMs | SRLs |  FFs | RAMB36 | RAMB18 | DSP Blocks |
++----------------------------+-----------------+------------+------------+---------+------+------+--------+--------+------------+
+| streaming_attention_v3     |           (top) |        820 |        820 |       0 |    0 | 1524 |      0 |      0 |          2 |
+|   (streaming_attention_v3) |           (top) |        703 |        703 |       0 |    0 | 1517 |      0 |      0 |          2 |
+|   softmax_inst             | softmax_unit_v2 |        117 |        117 |       0 |    0 |    7 |      0 |      0 |          0 |
++----------------------------+-----------------+------------+------------+---------+------+------+--------+--------+------------+
+
+

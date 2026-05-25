@@ -1,0 +1,241 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2024.2 (lin64) Build 5239630 Fri Nov 08 22:34:34 MST 2024
+| Date         : Mon Apr 13 20:28:18 2026
+| Host         : aleem-Latitude-5480 running 64-bit Ubuntu 24.04.4 LTS
+| Command      : report_datasheet -file ./synth_v3_timing_output/datasheet.rpt
+| Design       : streaming_attention_v3
+| Device       : 7z020-clg400
+| Speed File   : -1  PRODUCTION 1.12 2019-11-22
+| Design State : Synthesized
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Data Sheet Report
+
+Input Ports Setup/Hold
+
+----------+-----------+---------+-------+---------------+---------+---------------+---------+----------+
+Reference | Input     | IO Reg  | Delay |     Setup(ns) | Process |      Hold(ns) | Process | Internal |
+Clock     | Port      | Type    | Type  | to Clk (Edge) | Corner  | to Clk (Edge) | Corner  | Clock    |
+----------+-----------+---------+-------+---------------+---------+---------------+---------+----------+
+clk       | rst_n     | FDPE    | -     |     1.675 (r) | SLOW    |    -0.477 (r) | FAST    |          |
+clk       | start     | FDPE    | -     |     1.674 (r) | SLOW    |     0.514 (r) | SLOW    |          |
+clk       | v_data[0] | FDCE    | -     |     8.342 (r) | SLOW    |    -0.867 (r) | FAST    |          |
+clk       | v_data[1] | FDCE    | -     |     8.342 (r) | SLOW    |    -0.867 (r) | FAST    |          |
+clk       | v_data[2] | FDCE    | -     |     8.342 (r) | SLOW    |    -0.867 (r) | FAST    |          |
+clk       | v_data[3] | FDCE    | -     |     8.342 (r) | SLOW    |    -0.867 (r) | FAST    |          |
+clk       | v_data[4] | FDCE    | -     |     8.342 (r) | SLOW    |    -0.867 (r) | FAST    |          |
+clk       | v_data[5] | FDCE    | -     |     8.342 (r) | SLOW    |    -0.867 (r) | FAST    |          |
+clk       | v_data[6] | FDCE    | -     |     8.342 (r) | SLOW    |    -0.867 (r) | FAST    |          |
+clk       | v_data[7] | FDCE    | -     |     8.342 (r) | SLOW    |    -0.867 (r) | FAST    |          |
+----------+-----------+---------+-------+---------------+---------+---------------+---------+----------+
+
+
+Output Ports Clock-to-out
+
+----------+-------------+--------+-------+----------------+---------+----------------+---------+----------+
+Reference | Output      | IO Reg | Delay | Max Clk (Edge) | Process | Min Clk (Edge) | Process | Internal |
+Clock     | Port        | Type   | Type  |    to port(ns) | Corner  |    to port(ns) | Corner  | Clock    |
+----------+-------------+--------+-------+----------------+---------+----------------+---------+----------+
+clk       | busy        | FDCE   | -     |      2.699 (r) | SLOW    |      0.749 (r) | FAST    |          |
+clk       | done        | FDCE   | -     |      2.699 (r) | SLOW    |      0.749 (r) | FAST    |          |
+clk       | k_addr[0]   | FDCE   | -     |      3.776 (r) | SLOW    |      1.000 (r) | FAST    |          |
+clk       | k_addr[1]   | FDCE   | -     |      3.778 (r) | SLOW    |      1.000 (r) | FAST    |          |
+clk       | k_addr[2]   | FDCE   | -     |      3.776 (r) | SLOW    |      1.000 (r) | FAST    |          |
+clk       | k_addr[3]   | FDCE   | -     |      3.845 (r) | SLOW    |      1.000 (r) | FAST    |          |
+clk       | k_addr[4]   | FDCE   | -     |      3.836 (r) | SLOW    |      1.000 (r) | FAST    |          |
+clk       | k_addr[5]   | FDCE   | -     |      3.827 (r) | SLOW    |      1.000 (r) | FAST    |          |
+clk       | k_addr[6]   | FDCE   | -     |      3.817 (r) | SLOW    |      1.000 (r) | FAST    |          |
+clk       | k_addr[7]   | FDCE   | -     |      3.865 (r) | SLOW    |      1.000 (r) | FAST    |          |
+clk       | k_addr[8]   | FDCE   | -     |      4.024 (r) | SLOW    |      0.997 (r) | FAST    |          |
+clk       | k_addr[9]   | FDCE   | -     |      4.088 (r) | SLOW    |      1.061 (r) | FAST    |          |
+clk       | k_rd_en     | FDCE   | -     |      3.529 (r) | SLOW    |      1.000 (r) | FAST    |          |
+clk       | out_addr[0] | FDCE   | -     |      2.699 (r) | SLOW    |      0.749 (r) | FAST    |          |
+clk       | out_addr[1] | FDCE   | -     |      2.699 (r) | SLOW    |      0.749 (r) | FAST    |          |
+clk       | out_addr[2] | FDCE   | -     |      2.699 (r) | SLOW    |      0.749 (r) | FAST    |          |
+clk       | out_addr[3] | FDCE   | -     |      2.699 (r) | SLOW    |      0.749 (r) | FAST    |          |
+clk       | out_addr[4] | FDCE   | -     |      2.699 (r) | SLOW    |      0.749 (r) | FAST    |          |
+clk       | out_addr[5] | FDCE   | -     |      2.699 (r) | SLOW    |      0.749 (r) | FAST    |          |
+clk       | out_addr[6] | FDCE   | -     |      3.546 (r) | SLOW    |      1.000 (r) | FAST    |          |
+clk       | out_addr[7] | FDCE   | -     |      3.783 (r) | SLOW    |      1.013 (r) | FAST    |          |
+clk       | out_addr[8] | FDCE   | -     |      3.788 (r) | SLOW    |      1.013 (r) | FAST    |          |
+clk       | out_addr[9] | FDCE   | -     |      3.841 (r) | SLOW    |      0.992 (r) | FAST    |          |
+clk       | out_data[0] | FDCE   | -     |      5.351 (r) | SLOW    |      1.229 (r) | FAST    |          |
+clk       | out_data[1] | FDCE   | -     |      5.351 (r) | SLOW    |      1.229 (r) | FAST    |          |
+clk       | out_data[2] | FDCE   | -     |      5.351 (r) | SLOW    |      1.229 (r) | FAST    |          |
+clk       | out_data[3] | FDCE   | -     |      5.351 (r) | SLOW    |      1.229 (r) | FAST    |          |
+clk       | out_data[4] | FDCE   | -     |      5.351 (r) | SLOW    |      1.229 (r) | FAST    |          |
+clk       | out_data[5] | FDCE   | -     |      5.351 (r) | SLOW    |      1.229 (r) | FAST    |          |
+clk       | out_data[6] | FDCE   | -     |      5.351 (r) | SLOW    |      1.229 (r) | FAST    |          |
+clk       | out_data[7] | FDCE   | -     |      5.351 (r) | SLOW    |      1.229 (r) | FAST    |          |
+clk       | out_wr_en   | FDCE   | -     |      3.517 (r) | SLOW    |      1.013 (r) | FAST    |          |
+clk       | q_addr[0]   | FDCE   | -     |      3.776 (r) | SLOW    |      1.000 (r) | FAST    |          |
+clk       | q_addr[1]   | FDCE   | -     |      3.778 (r) | SLOW    |      1.000 (r) | FAST    |          |
+clk       | q_addr[2]   | FDCE   | -     |      3.776 (r) | SLOW    |      1.000 (r) | FAST    |          |
+clk       | q_addr[3]   | FDCE   | -     |      3.845 (r) | SLOW    |      1.000 (r) | FAST    |          |
+clk       | q_addr[4]   | FDCE   | -     |      3.836 (r) | SLOW    |      1.000 (r) | FAST    |          |
+clk       | q_addr[5]   | FDCE   | -     |      3.827 (r) | SLOW    |      1.000 (r) | FAST    |          |
+clk       | q_addr[6]   | FDCE   | -     |      3.817 (r) | SLOW    |      1.000 (r) | FAST    |          |
+clk       | q_addr[7]   | FDCE   | -     |      3.882 (r) | SLOW    |      1.000 (r) | FAST    |          |
+clk       | q_addr[8]   | FDCE   | -     |      4.041 (r) | SLOW    |      1.000 (r) | FAST    |          |
+clk       | q_addr[9]   | FDCE   | -     |      4.088 (r) | SLOW    |      1.059 (r) | FAST    |          |
+clk       | q_rd_en     | FDCE   | -     |      3.530 (r) | SLOW    |      1.000 (r) | FAST    |          |
+clk       | v_addr[0]   | FDCE   | -     |      3.776 (r) | SLOW    |      1.000 (r) | FAST    |          |
+clk       | v_addr[1]   | FDCE   | -     |      3.778 (r) | SLOW    |      1.000 (r) | FAST    |          |
+clk       | v_addr[2]   | FDCE   | -     |      3.776 (r) | SLOW    |      1.000 (r) | FAST    |          |
+clk       | v_addr[3]   | FDCE   | -     |      3.845 (r) | SLOW    |      1.000 (r) | FAST    |          |
+clk       | v_addr[4]   | FDCE   | -     |      3.836 (r) | SLOW    |      1.000 (r) | FAST    |          |
+clk       | v_addr[5]   | FDCE   | -     |      3.827 (r) | SLOW    |      1.000 (r) | FAST    |          |
+clk       | v_addr[6]   | FDCE   | -     |      3.817 (r) | SLOW    |      1.000 (r) | FAST    |          |
+clk       | v_addr[7]   | FDCE   | -     |      3.900 (r) | SLOW    |      1.000 (r) | FAST    |          |
+clk       | v_addr[8]   | FDCE   | -     |      4.059 (r) | SLOW    |      0.997 (r) | FAST    |          |
+clk       | v_addr[9]   | FDCE   | -     |      4.088 (r) | SLOW    |      1.061 (r) | FAST    |          |
+clk       | v_rd_en     | FDCE   | -     |      3.564 (r) | SLOW    |      1.000 (r) | FAST    |          |
+----------+-------------+--------+-------+----------------+---------+----------------+---------+----------+
+
+
+Setup between Clocks
+
+-------+-------------+---------------+---------+---------------+---------+---------------+---------+---------------+---------+
+Source | Destination |  Src:Rise     | Process |  Src:Rise     | Process |  Src:Fall     | Process |  Src:Fall     | Process |
+Clock  | Clock       | Dest:Rise(ns) | Corner  | Dest:Fall(ns) | Corner  | Dest:Rise(ns) | Corner  | Dest:Fall(ns) | Corner  |
+-------+-------------+---------------+---------+---------------+---------+---------------+---------+---------------+---------+
+clk    | clk         |         6.621 | SLOW    |               |         |               |         |               |         |
+-------+-------------+---------------+---------+---------------+---------+---------------+---------+---------------+---------+
+
+
+Setup / Hold times for input bus
+Clocked by: clk
+Worst Case Data Window: 7.474 ns
+Ideal Clock Offset to Actual Clock: -4.605 ns
+-------------------+-------------+---------+------------+---------+-----------+-----------+---------------+
+                   |             | Process |            | Process | Setup     |  Hold     | Source Offset |
+Source             |   Setup(ns) | Corner  |   Hold(ns) | Corner  | Slack(ns) | Slack(ns) | to Center(ns) |
+-------------------+-------------+---------+------------+---------+-----------+-----------+---------------+
+v_data[0]          |   8.342 (r) | SLOW    | -0.867 (r) | FAST    |    -1.342 |     1.867 |        -1.605 |
+v_data[1]          |   8.342 (r) | SLOW    | -0.867 (r) | FAST    |    -1.342 |     1.867 |        -1.605 |
+v_data[2]          |   8.342 (r) | SLOW    | -0.867 (r) | FAST    |    -1.342 |     1.867 |        -1.605 |
+v_data[3]          |   8.342 (r) | SLOW    | -0.867 (r) | FAST    |    -1.342 |     1.867 |        -1.605 |
+v_data[4]          |   8.342 (r) | SLOW    | -0.867 (r) | FAST    |    -1.342 |     1.867 |        -1.605 |
+v_data[5]          |   8.342 (r) | SLOW    | -0.867 (r) | FAST    |    -1.342 |     1.867 |        -1.605 |
+v_data[6]          |   8.342 (r) | SLOW    | -0.867 (r) | FAST    |    -1.342 |     1.867 |        -1.605 |
+v_data[7]          |   8.342 (r) | SLOW    | -0.867 (r) | FAST    |    -1.342 |     1.867 |        -1.605 |
+-------------------+-------------+---------+------------+---------+-----------+-----------+---------------+
+Worst Case Summary |   8.342 (r) | SLOW    | -0.867 (r) | FAST    |    -1.342 |     1.867 |             - |
+-------------------+-------------+---------+------------+---------+-----------+-----------+---------------+
+
+
+
+Max / Min delays for output bus
+Clocked by: clk
+Bus Skew: 0.312 ns
+-------------------+-------------+---------+-------------+---------+----------+
+                   |     Max     | Process |     Min     | Process | Edge     |
+Pad                |   Delay(ns) | Corner  |   Delay(ns) | Corner  | Skew(ns) |
+-------------------+-------------+---------+-------------+---------+----------+
+k_addr[0]          |   3.776 (r) | SLOW    |   1.000 (r) | FAST    |    0.002 |
+k_addr[1]          |   3.778 (r) | SLOW    |   1.000 (r) | FAST    |    0.002 |
+k_addr[2]          |   3.776 (r) | SLOW    |   1.000 (r) | FAST    |    0.002 |
+k_addr[3]          |   3.845 (r) | SLOW    |   1.000 (r) | FAST    |    0.069 |
+k_addr[4]          |   3.836 (r) | SLOW    |   1.000 (r) | FAST    |    0.060 |
+k_addr[5]          |   3.827 (r) | SLOW    |   1.000 (r) | FAST    |    0.051 |
+k_addr[6]          |   3.817 (r) | SLOW    |   1.000 (r) | FAST    |    0.041 |
+k_addr[7]          |   3.865 (r) | SLOW    |   1.000 (r) | FAST    |    0.089 |
+k_addr[8]          |   4.024 (r) | SLOW    |   0.997 (r) | FAST    |    0.248 |
+k_addr[9]          |   4.088 (r) | SLOW    |   1.061 (r) | FAST    |    0.312 |
+-------------------+-------------+---------+-------------+---------+----------+
+Worst Case Summary |   4.088 (r) | SLOW    |   0.997 (r) | FAST    |    0.312 |
+-------------------+-------------+---------+-------------+---------+----------+
+
+
+
+Max / Min delays for output bus
+Clocked by: clk
+Bus Skew: 1.142 ns
+-------------------+-------------+---------+-------------+---------+----------+
+                   |     Max     | Process |     Min     | Process | Edge     |
+Pad                |   Delay(ns) | Corner  |   Delay(ns) | Corner  | Skew(ns) |
+-------------------+-------------+---------+-------------+---------+----------+
+out_addr[0]        |   2.699 (r) | SLOW    |   0.749 (r) | FAST    |    0.000 |
+out_addr[1]        |   2.699 (r) | SLOW    |   0.749 (r) | FAST    |    0.000 |
+out_addr[2]        |   2.699 (r) | SLOW    |   0.749 (r) | FAST    |    0.000 |
+out_addr[3]        |   2.699 (r) | SLOW    |   0.749 (r) | FAST    |    0.000 |
+out_addr[4]        |   2.699 (r) | SLOW    |   0.749 (r) | FAST    |    0.000 |
+out_addr[5]        |   2.699 (r) | SLOW    |   0.749 (r) | FAST    |    0.000 |
+out_addr[6]        |   3.546 (r) | SLOW    |   1.000 (r) | FAST    |    0.847 |
+out_addr[7]        |   3.783 (r) | SLOW    |   1.013 (r) | FAST    |    1.084 |
+out_addr[8]        |   3.788 (r) | SLOW    |   1.013 (r) | FAST    |    1.089 |
+out_addr[9]        |   3.841 (r) | SLOW    |   0.992 (r) | FAST    |    1.142 |
+-------------------+-------------+---------+-------------+---------+----------+
+Worst Case Summary |   3.841 (r) | SLOW    |   0.749 (r) | FAST    |    1.142 |
+-------------------+-------------+---------+-------------+---------+----------+
+
+
+
+Max / Min delays for output bus
+Clocked by: clk
+Bus Skew: 0.000 ns
+-------------------+-------------+---------+-------------+---------+----------+
+                   |     Max     | Process |     Min     | Process | Edge     |
+Pad                |   Delay(ns) | Corner  |   Delay(ns) | Corner  | Skew(ns) |
+-------------------+-------------+---------+-------------+---------+----------+
+out_data[0]        |   5.351 (r) | SLOW    |   1.229 (r) | FAST    |    0.000 |
+out_data[1]        |   5.351 (r) | SLOW    |   1.229 (r) | FAST    |    0.000 |
+out_data[2]        |   5.351 (r) | SLOW    |   1.229 (r) | FAST    |    0.000 |
+out_data[3]        |   5.351 (r) | SLOW    |   1.229 (r) | FAST    |    0.000 |
+out_data[4]        |   5.351 (r) | SLOW    |   1.229 (r) | FAST    |    0.000 |
+out_data[5]        |   5.351 (r) | SLOW    |   1.229 (r) | FAST    |    0.000 |
+out_data[6]        |   5.351 (r) | SLOW    |   1.229 (r) | FAST    |    0.000 |
+out_data[7]        |   5.351 (r) | SLOW    |   1.229 (r) | FAST    |    0.000 |
+-------------------+-------------+---------+-------------+---------+----------+
+Worst Case Summary |   5.351 (r) | SLOW    |   1.229 (r) | FAST    |    0.000 |
+-------------------+-------------+---------+-------------+---------+----------+
+
+
+
+Max / Min delays for output bus
+Clocked by: clk
+Bus Skew: 0.312 ns
+-------------------+-------------+---------+-------------+---------+----------+
+                   |     Max     | Process |     Min     | Process | Edge     |
+Pad                |   Delay(ns) | Corner  |   Delay(ns) | Corner  | Skew(ns) |
+-------------------+-------------+---------+-------------+---------+----------+
+q_addr[0]          |   3.776 (r) | SLOW    |   1.000 (r) | FAST    |    0.000 |
+q_addr[1]          |   3.778 (r) | SLOW    |   1.000 (r) | FAST    |    0.002 |
+q_addr[2]          |   3.776 (r) | SLOW    |   1.000 (r) | FAST    |    0.000 |
+q_addr[3]          |   3.845 (r) | SLOW    |   1.000 (r) | FAST    |    0.069 |
+q_addr[4]          |   3.836 (r) | SLOW    |   1.000 (r) | FAST    |    0.060 |
+q_addr[5]          |   3.827 (r) | SLOW    |   1.000 (r) | FAST    |    0.051 |
+q_addr[6]          |   3.817 (r) | SLOW    |   1.000 (r) | FAST    |    0.041 |
+q_addr[7]          |   3.882 (r) | SLOW    |   1.000 (r) | FAST    |    0.106 |
+q_addr[8]          |   4.041 (r) | SLOW    |   1.000 (r) | FAST    |    0.265 |
+q_addr[9]          |   4.088 (r) | SLOW    |   1.059 (r) | FAST    |    0.312 |
+-------------------+-------------+---------+-------------+---------+----------+
+Worst Case Summary |   4.088 (r) | SLOW    |   1.000 (r) | FAST    |    0.312 |
+-------------------+-------------+---------+-------------+---------+----------+
+
+
+
+Max / Min delays for output bus
+Clocked by: clk
+Bus Skew: 0.312 ns
+-------------------+-------------+---------+-------------+---------+----------+
+                   |     Max     | Process |     Min     | Process | Edge     |
+Pad                |   Delay(ns) | Corner  |   Delay(ns) | Corner  | Skew(ns) |
+-------------------+-------------+---------+-------------+---------+----------+
+v_addr[0]          |   3.776 (r) | SLOW    |   1.000 (r) | FAST    |    0.002 |
+v_addr[1]          |   3.778 (r) | SLOW    |   1.000 (r) | FAST    |    0.002 |
+v_addr[2]          |   3.776 (r) | SLOW    |   1.000 (r) | FAST    |    0.002 |
+v_addr[3]          |   3.845 (r) | SLOW    |   1.000 (r) | FAST    |    0.069 |
+v_addr[4]          |   3.836 (r) | SLOW    |   1.000 (r) | FAST    |    0.060 |
+v_addr[5]          |   3.827 (r) | SLOW    |   1.000 (r) | FAST    |    0.051 |
+v_addr[6]          |   3.817 (r) | SLOW    |   1.000 (r) | FAST    |    0.041 |
+v_addr[7]          |   3.900 (r) | SLOW    |   1.000 (r) | FAST    |    0.124 |
+v_addr[8]          |   4.059 (r) | SLOW    |   0.997 (r) | FAST    |    0.283 |
+v_addr[9]          |   4.088 (r) | SLOW    |   1.061 (r) | FAST    |    0.312 |
+-------------------+-------------+---------+-------------+---------+----------+
+Worst Case Summary |   4.088 (r) | SLOW    |   0.997 (r) | FAST    |    0.312 |
+-------------------+-------------+---------+-------------+---------+----------+
+
+
+
